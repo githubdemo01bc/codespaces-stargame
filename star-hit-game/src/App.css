@@ -1,0 +1,28 @@
+.app-container {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-icon {
+  font-size: 50px;
+}
+
+.game-title {
+  margin: 20px 0;
+}
+
+.game-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}

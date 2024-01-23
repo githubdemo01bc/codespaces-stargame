@@ -1,0 +1,33 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+      "cpus": 4
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "cd ./star-hit-game && npm install",
+    "postCreateCommand": "",
+    "postAttachCommand": {
+      "server": "cd ./star-hit-game && npm start"
+    },
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+    },
+    "codespaces": {
+        "openFiles": [
+          "src/App.js"
+        ]
+      }
+    },
+    "portsAttributes": {
+      "3000": {
+        "label": "Application",
+        "onAutoForward": "openPreview"
+      }
+    },
+    "forwardPorts": [3000]
+  }
+  
